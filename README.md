@@ -12,14 +12,17 @@ BCI (Brain-Computer Interface), this technology holds great potential for assist
 ## 2. Data Collection
 
 **Dataset:** The BCI Competition IV – Dataset 2a  
-**Subjects:** 9 subjects  
-Each subject underwent two experiments, each consisting of 6 runs, for a total of 288 trials with 48 trials per run.  
 
-**Imagery tasks:**  
-- Left hand  
-- Right hand  
-- Both feet  
-- Tongue  
+| Attribute                  | Description                                |
+|---------------------------|--------------------------------------------|
+| **Subjects**              | 9 healthy subjects (A01–A09)               |
+| **Sessions per Subject**  | 2 (Training + Testing)                     |
+| **MI Classes**            | Left hand, Right hand, Both feet, Tongue  |
+| **Trials per Session**    | 288 (72 per class)                         |
+| **Sampling Rate**         | **250 Hz**                                 |
+| **Number of Channels**    | **22 EEG channels**, 3 EOG channels        |
+| **Duration per Trial**    | ~7.5 seconds                               |
+| **File Format**           | `.gdf` for labels and events     |
 
 **Trial timing:**  
 - t = 0 s: Fixation and beep  
@@ -28,6 +31,20 @@ Each subject underwent two experiments, each consisting of 6 runs, for a total o
 - t = 6 to 7.5 s: Rest
   
  ![Timing Scheme Paradigm](https://raw.githubusercontent.com/orvindemsy/BCICIV2a-FBCSP/d6dce55b4951b8e46bb5e625b060d332101cdd59/img/timing-scheme-paradigm.png)
+
+---
+
+##  Source and Citation
+- **Website**: [https://www.bbci.de/competition/iv/](https://www.bbci.de/competition/iv/)
+- **Dataset Page**: [https://www.bbci.de/competition/iv/#dataset2a](https://www.bbci.de/competition/iv/#dataset2a)
+- **Owner / Source**: BCI Group, Department of Computer Science, Technische Universität Berlin, Germany.
+- **Citation**:
+  > Tangermann, M., Müller, K. R., Aertsen, A., Birbaumer, N., Braun, C., Brunner, C., ... & Blankertz, B. (2012). Review of the BCI Competition IV. Frontiers in Neuroscience, 6, 55. [DOI: 10.3389/fnins.2012.00055](https://doi.org/10.3389/fnins.2012.00055)
+
+
+
+
+
 
 # 🧠 Why we choose 7-30Hz? Comparison of EEG Frequency Bands on Machine Learning Performance
 After using svm.py to train, this table compares classification performance under different filtered frequency bands (Hz), including metrics from training, validation, and testing phases:
@@ -58,6 +75,7 @@ After using svm.py to train, this table compares classification performance unde
 - The **7–13 Hz** band focuses on alpha rhythms, which may not fully capture the motor imagery signals, resulting in slightly lower accuracy.
 
 > We recommend using the **7–30 Hz** frequency band for optimal model training and evaluation.
+> 
 
 ## References
 
