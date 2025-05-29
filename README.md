@@ -36,10 +36,7 @@ BCI (Brain-Computer Interface), this technology holds great potential for assist
 
 ##  Source and Citation
 - **Website**: [https://www.bbci.de/competition/iv/](https://www.bbci.de/competition/iv/)
-- **Dataset Page**: [https://www.bbci.de/competition/iv/#dataset2a](https://www.bbci.de/competition/iv/#dataset2a)
-- **Owner / Source**: BCI Group, Department of Computer Science, Technische Universität Berlin, Germany.
-- **Citation**:
-  > Tangermann, M., Müller, K. R., Aertsen, A., Birbaumer, N., Braun, C., Brunner, C., ... & Blankertz, B. (2012). Review of the BCI Competition IV. Frontiers in Neuroscience, 6, 55. [DOI: 10.3389/fnins.2012.00055](https://doi.org/10.3389/fnins.2012.00055)
+- **Owner / Source**: provided by the Institute for Knowledge Discovery (Laboratory of Brain-Computer Interfaces), Graz University of Technology, (Clemens Brunner, Robert Leeb, Gernot Müller-Putz, Alois Schlögl, Gert Pfurtscheller)
 
 
 
