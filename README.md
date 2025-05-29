@@ -30,8 +30,7 @@ Each subject underwent two experiments, each consisting of 6 runs, for a total o
  ![Timing Scheme Paradigm](https://raw.githubusercontent.com/orvindemsy/BCICIV2a-FBCSP/d6dce55b4951b8e46bb5e625b060d332101cdd59/img/timing-scheme-paradigm.png)
 
 # 🧠 Why we choose 7-30Hz? Comparison of EEG Frequency Bands on Machine Learning Performance
-
-This table compares classification performance under different filtered frequency bands (Hz), including metrics from training, validation, and testing phases:
+After using svm.py to train, this table compares classification performance under different filtered frequency bands (Hz), including metrics from training, validation, and testing phases:
 
 | Item / Frequency Band | **1–50 Hz** | **7–30 Hz** | **7–13 Hz** |
 |------------------------|-------------|-------------|-------------|
@@ -52,13 +51,13 @@ This table compares classification performance under different filtered frequenc
 
 ---
 
-## 📌 Conclusion & Recommendation
+##  Conclusion & Recommendation
 
 - The **7–30 Hz** band performs best, with both validation and test accuracy reaching **91%**.
 - The **1–50 Hz** range includes high-frequency noise, slightly degrading validation performance.
 - The **7–13 Hz** band focuses on alpha rhythms, which may not fully capture the motor imagery signals, resulting in slightly lower accuracy.
 
-> ✅ We recommend using the **7–30 Hz** frequency band for optimal model training and evaluation.
+> We recommend using the **7–30 Hz** frequency band for optimal model training and evaluation.
 
 ## References
 
