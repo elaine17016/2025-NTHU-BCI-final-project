@@ -31,6 +31,7 @@ BCI (Brain-Computer Interface), this technology holds great potential for assist
 - t = 6 to 7.5 s: Rest
   
  ![Timing Scheme Paradigm](https://raw.githubusercontent.com/orvindemsy/BCICIV2a-FBCSP/d6dce55b4951b8e46bb5e625b060d332101cdd59/img/timing-scheme-paradigm.png)
+  ![Timing Scheme Paradigm](https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/comparison%20table.png)
 
 ---
 
