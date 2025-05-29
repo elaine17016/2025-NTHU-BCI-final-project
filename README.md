@@ -29,6 +29,36 @@ Each subject underwent two experiments, each consisting of 6 runs, for a total o
   
  ![Timing Scheme Paradigm](https://raw.githubusercontent.com/orvindemsy/BCICIV2a-FBCSP/d6dce55b4951b8e46bb5e625b060d332101cdd59/img/timing-scheme-paradigm.png)
 
+# 🧠 Comparison of EEG Frequency Bands on Machine Learning Performance
+
+This table compares classification performance under different filtered frequency bands (Hz), including metrics from training, validation, and testing phases:
+
+| Item / Frequency Band | **1–50 Hz** | **7–30 Hz** | **7–13 Hz** |
+|------------------------|-------------|-------------|-------------|
+| Original X shape       | (500, 3, 568) | (500, 3, 576) | (500, 3, 576) |
+| Transposed X shape     | (568, 3, 500) | (576, 3, 500) | (576, 3, 500) |
+| Original y shape       | (568,)        | (576,)        | (576,)        |
+| Converted data shape   | (1704, 500)   | (1728, 500)   | (1728, 500)   |
+| Train / Test Split     | Train: 1363<br>Test: 341 | Train: 1382<br>Test: 346 | Train: 1382<br>Test: 346 |
+| **Avg. Training Acc.** | 0.9765        | **0.9792**    | 0.9410        |
+| **Avg. Validation Acc.** | 0.8129      | **0.8589**    | 0.8061        |
+| **Final Test Accuracy** | 0.8475      | **0.9133**    | 0.8208        |
+| Left Hand Acc. (Validation) | 0.8223 (560/681) | **0.8698 (691/691)** | 0.8307 (574/691) |
+| Right Hand Acc. (Validation) | 0.8035 (548/682) | **0.8480 (586/691)** | 0.7815 (540/691) |
+| Test Precision          | Left: 0.87<br>Right: 0.83 | Left: 0.91<br>Right: 0.91 | Left: 0.81<br>Right: 0.84 |
+| Test Recall             | Left: 0.82<br>Right: 0.87 | Left: 0.91<br>Right: 0.91 | Left: 0.84<br>Right: 0.80 |
+| Test F1-Score           | Left: 0.84<br>Right: 0.85 | Left: 0.91<br>Right: 0.91 | Left: 0.82<br>Right: 0.82 |
+| Test Support            | 171 / 170     | 173 / 173     | 173 / 173     |
+
+---
+
+## 📌 Conclusion & Recommendation
+
+- The **7–30 Hz** band performs best, with both validation and test accuracy reaching **91%**.
+- The **1–50 Hz** range includes high-frequency noise, slightly degrading validation performance.
+- The **7–13 Hz** band focuses on alpha rhythms, which may not fully capture the motor imagery signals, resulting in slightly lower accuracy.
+
+> ✅ We recommend using the **7–30 Hz** frequency band for optimal model training and evaluation.
 
 ## References
 
