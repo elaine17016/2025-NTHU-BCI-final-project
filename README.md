@@ -29,7 +29,7 @@ Each subject underwent two experiments, each consisting of 6 runs, for a total o
   
  ![Timing Scheme Paradigm](https://raw.githubusercontent.com/orvindemsy/BCICIV2a-FBCSP/d6dce55b4951b8e46bb5e625b060d332101cdd59/img/timing-scheme-paradigm.png)
 
-# 🧠 Comparison of EEG Frequency Bands on Machine Learning Performance
+# 🧠 Why we choose 7-30Hz? Comparison of EEG Frequency Bands on Machine Learning Performance
 
 This table compares classification performance under different filtered frequency bands (Hz), including metrics from training, validation, and testing phases:
 
