@@ -31,7 +31,8 @@ BCI (Brain-Computer Interface), this technology holds great potential for assist
 - t = 6 to 7.5 s: Rest
   
  ![Timing Scheme Paradigm](https://raw.githubusercontent.com/orvindemsy/BCICIV2a-FBCSP/d6dce55b4951b8e46bb5e625b060d332101cdd59/img/timing-scheme-paradigm.png)
-  ![Timing Scheme Paradigm](https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/comparison%20table.png)
+
+ 
 
 ---
 
@@ -66,7 +67,7 @@ After using svm.py to train, this table compares classification performance unde
 
 ---
 
-##  Conclusion & Recommendation
+##  Recommendation
 
 - The **7–30 Hz** band performs best, with both validation and test accuracy reaching **91%**.
 - The **1–50 Hz** range includes high-frequency noise, slightly degrading validation performance.
@@ -74,6 +75,19 @@ After using svm.py to train, this table compares classification performance unde
 
 > We recommend using the **7–30 Hz** frequency band for optimal model training and evaluation.
 > 
+## 3. Model Framework
+First, we use EEGLAB for initial data preprocessing.
+
+ <img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/Preprocessing%20Pipeline.png?raw=true" width="400px">
+ 
+Next, we apply preprocessing.m in MATLAB to perform advanced preprocessing steps and retrieve the resulting .mat file.
+
+ <img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/preprocessing.m%20%E6%B5%81%E7%A8%8B%E5%9C%96.png?raw=true" width="400px">
+ 
+Then, we conduct machine learning. Besides SVM, we also use other models such as KNN, Random Forest, and XGBoost etc.
+
+ <img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/ML%20process.png?raw=true" width="400px">
+
 
 ## References
 
