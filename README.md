@@ -88,6 +88,16 @@ Then, we conduct machine learning. Besides SVM, we also use other models such as
 
  <img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/ML%20process.png?raw=true" width="400px">
 
+## Results
+To evaluate the classification performance of different machine learning models (trained with 7–30 Hz filtered EEG data), we compare SVM, Random Forest, XGBoost, and KNN using several metrics:
+
+| Model         | Accuracy | Precision (L/R)  | Recall (L/R)  | F1-score (L/R) |
+|---------------|----------|------------------|---------------|----------------|
+| **SVM**       | **0.89** | 0.91 / 0.87      | 0.87 / 0.92   | 0.89 / 0.90    |
+| Random Forest | 0.84     | 0.87 / 0.82      | 0.81 / 0.88   | 0.84 / 0.85    |
+| XGBoost       | **0.86** | 0.88 / 0.83      | 0.82 / 0.89   | 0.85 / 0.86    |
+| KNN           | 0.74     | 0.81 / 0.69      | 0.62 / 0.86   | 0.71 / 0.77    |
+
 
 ## References
 
