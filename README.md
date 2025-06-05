@@ -60,7 +60,7 @@ Then, we conduct machine learning. Besides SVM, we also use other models such as
  <img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/ML%20process.png?raw=true" width="400px">
 
 ## Results
-# 🧠 Why we choose 7-30Hz? Comparison of EEG Frequency Bands on Machine Learning Performance
+### 🧠 Why we choose 7-30Hz? Comparison of EEG Frequency Bands on Machine Learning Performance
 After using svm.py to train, this table compares classification performance under different filtered frequency bands (Hz), including metrics from training, validation, and testing phases:
 
 | Item / Frequency Band | **1–50 Hz** | **7–30 Hz** | **7–13 Hz** |
@@ -91,7 +91,7 @@ After using svm.py to train, this table compares classification performance unde
 > We recommend using the **7–30 Hz** frequency band for optimal model training and evaluation.
 >
 > 
-To evaluate the classification performance of different machine learning models (trained with 7–30 Hz filtered EEG data), we compare SVM, Random Forest, XGBoost, and KNN using several metrics:
+🧠To evaluate the classification performance of different machine learning models (trained with 7–30 Hz filtered EEG data), we compare SVM, Random Forest, XGBoost, and KNN using several metrics:
 
 | Model         | Accuracy | Precision (L/R)  | Recall (L/R)  | F1-score (L/R) |
 |---------------|----------|------------------|---------------|----------------|
