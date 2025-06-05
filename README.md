@@ -89,8 +89,8 @@ After using svm.py to train, this table compares classification performance unde
 - The **7–13 Hz** band focuses on alpha rhythms, which may not fully capture the motor imagery signals, resulting in slightly lower accuracy.
 
 > We recommend using the **7–30 Hz** frequency band for optimal model training and evaluation.
->
-> 
+
+## Model Comparison
 🧠To evaluate the classification performance of different machine learning models (trained with 7–30 Hz filtered EEG data), we compare SVM, Random Forest, XGBoost, and KNN using several metrics:
 
 | Model         | Accuracy | Precision (L/R)  | Recall (L/R)  | F1-score (L/R) |
@@ -100,6 +100,16 @@ After using svm.py to train, this table compares classification performance unde
 | XGBoost       | **0.86** | 0.88 / 0.83      | 0.82 / 0.89   | 0.85 / 0.86    |
 | KNN           | 0.74     | 0.81 / 0.69      | 0.62 / 0.86   | 0.71 / 0.77    |
 
+## ERP Analysis at Channel C3
+To further explore the neurophysiological basis of motor imagery, we analyzed the event-related potential (ERP) at channel **C3**, a region typically associated with motor function.
+
+- **Left-hand ERP (C3)**  
+  ![ERP Left](image/ERP(C3_left).png)
+
+- **Right-hand ERP (C3)**  
+  ![ERP Right](image/ERP(C3_right).png)
+
+Although both conditions evoked clear ERP responses, the right-hand imagery elicited a slightly stronger negative deflection around 300–600 ms, which aligns with the known contralateral role of C3 in processing right-hand motor activity. This finding reinforces the physiological validity of our EEG-based features.
 
 ## References
 
