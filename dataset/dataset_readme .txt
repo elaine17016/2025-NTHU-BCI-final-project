@@ -1,4 +1,5 @@
 Data Source and Citation
 Website: https://www.bbci.de/competition/iv/
 Owner / Source: provided by the Institute for Knowledge Discovery (Laboratory of Brain-Computer Interfaces), Graz University of Technology, (Clemens Brunner, Robert Leeb, Gernot Müller-Putz, Alois Schlögl, Gert Pfurtscheller)
-原始gdf檔案 google drive連結: https://drive.google.com/drive/u/1/folders/1KHjvuccGvgcE_wHrlq_lZpZ9nxqkxVRR
+Original gdf file google drive link: https://drive.google.com/drive/u/1/folders/1KHjvuccGvgcE_wHrlq_lZpZ9nxqkxVRR
+👉The MAT file has been processed using EEGLAB and the preprocessing.m script.
