@@ -99,6 +99,16 @@ pip install numpy h5py scipy scikit-learn
 python svm.py
 ```
 
+Also, we can run SVM.ipynb on Google Colab
+This notebook trains and evaluates an SVM model on EEG motor imagery data from MI_3.mat. You can run it easily on Google Colab by following the steps below.
+
+1. Prerequisites
+Make sure you have uploaded the EEG data file MI_3.mat to your Google Drive, under the path:
+/MyDrive/BCI/MI_3.mat
+2. Open Google Colab.
+3. Upload or open the SVM.ipynb notebook.
+4. Run the following code blocks step by step.
+
 ## 6. Results
 ### 🧠 Why we choose 7-30Hz? Comparison of EEG Frequency Bands on Machine Learning Performance
 After using svm.py to train, this table compares classification performance under different filtered frequency bands (Hz), including metrics from training, validation, and testing phases:
