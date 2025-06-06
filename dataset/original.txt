@@ -1,0 +1,3 @@
+Data Source and Citation
+Website: https://www.bbci.de/competition/iv/
+Owner / Source: provided by the Institute for Knowledge Discovery (Laboratory of Brain-Computer Interfaces), Graz University of Technology, (Clemens Brunner, Robert Leeb, Gernot Müller-Putz, Alois Schlögl, Gert Pfurtscheller)
