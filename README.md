@@ -74,27 +74,26 @@ In a quest to verify the reliability and generalizability of our BCI classificat
 
 These validation methods collectively build confidence in the goodness and strength of the designed model.
 ## 5. Usage
-Here, we introduce the usage of svm.p.
+Here, we introduce the usage of svm.py.
 
-1. Environment Setup
+1. **Environment Setup**  
+   In order to execute our BCI classification code, make sure to have the following environment:  
+   - Python version: 3.8+
 
-  In order to execute our BCI classification code, make sure to have the following environment:
-
-  Python version: 3.8+
-
-2. Required Libraries:
+2. **Required Libraries:**
 ```bash
 pip install numpy h5py scipy scikit-learn
 ```
 
-3. Dataset
-  Download and preprocess the EEG dataset with EEGLAB and preprocessing.m in MATLAB to create MI_3.mat.
+3. **Dataset**
 
-4. How to Run?
+   Download and preprocess the EEG dataset with EEGLAB and preprocessing.m in MATLAB to create MI_3.mat.
 
-  Put the file MI_3.mat in the current working directory.
+4. **How to Run?**
 
-  Run the classification script:
+   Put the file MI_3.mat in the current working directory.
+
+   Run the classification script:
 
 ```bash
 python svm.py
