@@ -9,6 +9,8 @@
 
 BCI (Brain-Computer Interface), this technology holds great potential for assisting individuals with physical disabilities, particularly through the use of MI (Motor Imagery). While MI-BCI systems often require extensive user training, we explore whether DL (Deep Learning) can improve signal recognition, especially for inefficient users, thereby enhancing the overall effectiveness and accessibility of MI-based BCI applications.
 
+This study focuses on developing and evaluating more effective classification techniques for differentiating between left-hand and right-hand motor imagery tasks.
+
 ## 2. Data Collection
 
 **Dataset:** The BCI Competition IV – Dataset 2a  
@@ -58,8 +60,47 @@ Next, we apply preprocessing.m in MATLAB to perform advanced preprocessing steps
 Then, we conduct machine learning. Besides SVM, we also use other models such as KNN, Random Forest, and XGBoost etc.
 
  <img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/ML%20process.png?raw=true" width="400px">
+ 
+## 4. Validation
+In a quest to verify the reliability and generalizability of our BCI classification model, we used the following approaches:
 
-## Results
+1. Train-Test Split: We first divided the dataset into a training set and a test set using an 80/20 stratified split for balancing classes. This allowed us to test the performance of the model on unseen data.
+
+2. Cross-Validation: For the training set, Stratified K-Fold Cross-Validation (k=5) was used to prevent overfitting and to test the models' stability. Using the stratified approach guarantees that every fold has the same proportion of left-hand and right-hand motor imagery trials.
+
+3. We performed EEG data standardization using StandardScaler prior to training to normalize the features and enhance SVM performance.
+
+4. Metrics Used: We added accuracy, precision, recall, and F1-score metrics for left-hand and right-hand classes, giving a comprehensive assessment of classification performance.
+
+These validation methods collectively build confidence in the goodness and strength of the designed model.
+## 5. Usage
+Here, we introduce the usage of svm.p.
+
+1. Environment Setup
+
+In order to execute our BCI classification code, make sure to have the following environment:
+
+Python version: 3.8+
+
+2. Required Libraries:
+```bash
+pip install numpy h5py scipy scikit-learn
+```
+
+3. Dataset
+Download and preprocess the EEG dataset with EEGLAB and preprocessing.m in MATLAB to create MI_3.mat.
+
+4. How to Run?
+
+Put the file MI_3.mat in the current working directory.
+
+Run the classification script:
+
+```bash
+python svm.py
+```
+
+## 6. Results
 ### 🧠 Why we choose 7-30Hz? Comparison of EEG Frequency Bands on Machine Learning Performance
 After using svm.py to train, this table compares classification performance under different filtered frequency bands (Hz), including metrics from training, validation, and testing phases:
 
