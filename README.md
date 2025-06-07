@@ -87,11 +87,11 @@ pip install numpy h5py scipy scikit-learn
 
 3. **Dataset**
 
-   Download and preprocess the EEG dataset with EEGLAB and preprocessing.m in MATLAB to create MI_3.mat.
+   Download and preprocess the EEG dataset with EEGLAB and preprocessing.m in MATLAB to create MI_2_without_eog.mat.
 
 4. **How to Run?**
 
-   Put the file MI_3.mat in the current working directory.
+   Put the file MI_2_without_eog.mat in the current working directory.
 
    Run the classification script:
 
