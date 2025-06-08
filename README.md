@@ -89,7 +89,7 @@ Then, we conduct machine learning. Besides SVM, we also use other models such as
 
 - Conclusion: Filtering enhances signal quality by removing high-frequency noise, increasing the proportion of brain-related ICs (~68%). Data credibility is therefore improved.
 
-  <img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/filter.png?raw=true" width="500px">
+ <img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/filter.png?raw=true" width="500px">
  
 3. ASR-Corrected EEG Data (Bandpass Filter + ASR)
 - Brain ICs: 16
