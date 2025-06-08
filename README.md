@@ -77,7 +77,8 @@ Then, we conduct machine learning. Besides SVM, we also use other models such as
 - Assessment: Raw EEG has a high proportion of non-brain parts (9 out of 22 ICs, ~41%).
 
 - Conclusion: Raw EEG is less trustworthy because it contains several artifact ICs.
- ![raw](https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/Raw.png?raw=true)
+
+ <img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/Raw.png?raw=true" width="500px">
 
 2. Filtered EEG Data (Bandpass Filter Applied)
 - Brain ICs: 15
@@ -87,18 +88,20 @@ Then, we conduct machine learning. Besides SVM, we also use other models such as
 - Evaluation: Bandpass filtering augmented the brain ICs' quantity and eliminated line noise completely. ICs related to the heart also manifested, possibly because increased signal purity uncovered cardiac artifacts.
 
 - Conclusion: Filtering enhances signal quality by removing high-frequency noise, increasing the proportion of brain-related ICs (~68%). Data credibility is therefore improved.
-  
- ![filter](https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/Filter.png?raw=true)
+
+  <img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/filter.png?raw=true" width="500px">
  
 3. ASR-Corrected EEG Data (Bandpass Filter + ASR)
 - Brain ICs: 16
 
 - Artifacts: Eye (1), Heart (3), Other (2)
 
-- Assessment: Artifact Subspace Reconstruction (ASR) enhances quality even more with an elevated proportion of brain ICs and lessening the number of heart artifacts. Line and channel noise is entirely eliminated.
+- Assessment: Artifact Subspace Reconstruction (ASR) enhances quality even more with an elevated proportion of brain ICs and lessening the number of heart artifacts. Line noise is entirely eliminated.
 
 - Conclusion: The most reliable data is achieved in this preprocessing phase, where 16 out of 22 ICs (73%) are labeled as brain-related. ASR eliminates transient and structured noise nicely, enhancing the interpretability and scientific merit of the EEG.
- ![ASR](https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/ASR.png?raw=true)
+
+ <img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/ASR.png?raw=true" width="500px">
+ 
 | EEG Stage     | Brain ICs | Artifact ICs (Total) | % Brain ICs | Notes                                           |
 | ------------- | --------- | -------------------- | ----------- | ----------------------------------------------- |
 | Raw           | 13        | 9                    | 59%         | Contains significant noise |
