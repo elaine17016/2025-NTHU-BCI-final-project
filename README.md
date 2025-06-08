@@ -61,7 +61,51 @@ Then, we conduct machine learning. Besides SVM, we also use other models such as
 
  <img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/ML%20process.png?raw=true" width="400px">
  
-## 4. Validation
+## 4. Quality Evaluation & Validation
+## Quality Evaluation
+| Preprocessing | Bandpass filter | ASR | Brain | Muscle | Eye | Heart | Line Noise | Channel Noise | Other |
+|---------------|------------------|-----|--------|--------|-----|--------|--------------|----------------|--------|
+| Raw           |                  |     | 13     | 0      | 1   | 0      | 2            | 0              | 6      |
+| Filter        | ✓                |     | 15     | 0      | 1   | 4      | 0            | 0              | 2      |
+| ASR-corrected | ✓                | ✓   | 16     | 0      | 1   | 3      | 0            | 0              | 2      |
+
+1. Raw EEG Data
+- Brain ICs: 13
+
+- Artifacts: Eye (1), Line Noise (2), Other (6)
+
+- Assessment: Raw EEG has a high proportion of non-brain parts (9 out of 22 ICs, ~41%).
+
+- Conclusion: Raw EEG is less trustworthy because it contains several artifact ICs.
+ ![raw](https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/Raw.png?raw=true)
+
+2. Filtered EEG Data (Bandpass Filter Applied)
+- Brain ICs: 15
+
+- Artifacts: Eye (1), Heart (4), Other (2)
+
+- Evaluation: Bandpass filtering augmented the brain ICs' quantity and eliminated line noise completely. ICs related to the heart also manifested, possibly because increased signal purity uncovered cardiac artifacts.
+
+- Conclusion: Filtering enhances signal quality by removing high-frequency noise, increasing the proportion of brain-related ICs (~68%). Data credibility is therefore improved.
+  
+ ![filter](https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/Filter.png?raw=true)
+ 
+3. ASR-Corrected EEG Data (Bandpass Filter + ASR)
+- Brain ICs: 16
+
+- Artifacts: Eye (1), Heart (3), Other (2)
+
+- Assessment: Artifact Subspace Reconstruction (ASR) enhances quality even more with an elevated proportion of brain ICs and lessening the number of heart artifacts. Line and channel noise is entirely eliminated.
+
+- Conclusion: The most reliable data is achieved in this preprocessing phase, where 16 out of 22 ICs (73%) are labeled as brain-related. ASR eliminates transient and structured noise nicely, enhancing the interpretability and scientific merit of the EEG.
+ ![ASR](https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/ASR.png?raw=true)
+| EEG Stage     | Brain ICs | Artifact ICs (Total) | % Brain ICs | Notes                                           |
+| ------------- | --------- | -------------------- | ----------- | ----------------------------------------------- |
+| Raw           | 13        | 9                    | 59%         | Contains significant noise |
+| Filtered      | 15        | 7                    | 68%         | Cleaner signal; heart artifact emerges          |
+| ASR-corrected | 16        | 6                    | 73%         | Highest brain ICs; lowest artifact interference |
+
+## Validation
 In a quest to verify the reliability and generalizability of our BCI classification model, we used the following approaches:
 
 1. Train-Test Split: We first divided the dataset into a training set and a test set using an 80/20 stratified split for balancing classes. This allowed us to test the performance of the model on unseen data.
