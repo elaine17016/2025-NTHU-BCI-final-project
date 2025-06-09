@@ -157,6 +157,31 @@ Make sure you have uploaded the EEG data file MI_3.mat to your Google Drive, und
 4. Run the following code blocks step by step.
 
 ## 6. Results
+Following are the result figures for our models.
+### SVM
+<img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/svm_training_validation_acc.png" width="500px">
+<img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/svm_per_class_validation_acc.png" width="500px">
+<img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/svm_test_precision_recall_f1_score.png" width="500px">
+<img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/svm_test_confusion_matrix.png" width="500px">
+<img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/svm_test_pca.png" width="500px">
+### Random Forest
+<img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/rf_training_validation_acc.png" width="500px">
+<img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/rf_per_class_validation_acc.png" width="500px">
+<img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/rf_test_precision_recall_f1_score.png" width="500px">
+<img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/rf_test_confusion_matrix.png" width="500px">
+<img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/rf_test_pca.png" width="500px">
+### XGBoost
+<img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/xgboost_training_validation_acc.png" width="500px">
+<img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/xgboost_per_class_validation_acc.png" width="500px">
+<img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/xgboost_test_precision_recall_f1_score.png" width="500px">
+<img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/xgboostm_test_confusion_matrix.png" width="500px">
+<img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/xgboost_test_pca.png" width="500px">
+### KNN
+<img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/knn_training_validation_acc.png" width="500px">
+<img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/knn_per_class_validation_acc.png" width="500px">
+<img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/knn_test_precision_recall_f1_score.png" width="500px">
+<img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/knn_test_confusion_matrix.png" width="500px">
+<img src="https://github.com/elaine17016/2025-NTHU-BCI-final-project/blob/main/image/knn_test_pca.png" width="500px">
 ### 🧠 Why we choose 7-30Hz? Comparison of EEG Frequency Bands on Machine Learning Performance
 After using svm.py to train, this table compares classification performance under different filtered frequency bands (Hz), including metrics from training, validation, and testing phases:
 
